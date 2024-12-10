@@ -8,23 +8,230 @@
     <title>Document</title>
 </head>
 <body>
-   <main class="container">
-    <header class="topo">
-        <div class="logo">
-            <img width="100px" src="https://images.ctfassets.net/xz1dnu24egyd/3x9aqmYENWXOnGiU5P9VSV/6a076a36572ab20d1e07c8364d5578ae/gitlab-logo-200-preview.png" alt="">
-        </div>
-        <div class="barra-pesquisa">
-            <div class="pesquisa">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Pesquise por projetos">
+    <main class="container">
+        <header class="topo">
+            <div class="logo">
+                <img width="100px" src="https://images.ctfassets.net/xz1dnu24egyd/3x9aqmYENWXOnGiU5P9VSV/6a076a36572ab20d1e07c8364d5578ae/gitlab-logo-200-preview.png" alt="">
             </div>
-        </div>
-        <div class="perfil">
-            <i class="fa-solid fa-moon"></i>
-            <i class="fa-solid fa-bell"></i>
-            <img width="50px" src="https://cdnbatera.bateraclube.com.br/files/122/bateria-pearl-decade-maple-classic-satin-amburst-208101214-com-kit-de-ferragens-8309189..jpg" alt="">
-        </div>
-    </header>
-   </main>
+            <div class="barra-pesquisa">
+                <div class="pesquisa">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Pesquise por projetos">
+                </div>
+            </div>
+            <div class="perfil">
+                <i class="fa-solid fa-moon"></i>
+                <i class="fa-solid fa-bell"></i>
+                <img width="40px" src="https://cdnbatera.bateraclube.com.br/files/122/bateria-pearl-decade-maple-classic-satin-amburst-208101214-com-kit-de-ferragens-8309189..jpg" alt="">
+            </div>
+        </header>
+        <section class="content">
+            <aside class="side-menu">
+                <div class="opcoes">
+                    <div class="opcao" id="selected">
+                        <div class="icone">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <span>Dashboard</span>
+                    </div>
+                    <div class="opcao">
+                        <div class="icone">
+                            <i class="fa-brands fa-wpforms"></i>
+                        </div>
+                        <span>Forms</span>
+                    </div>
+                    <div class="opcao">
+                        <div class="icone">
+                            <i class="fa-solid fa-folder-open"></i>
+                        </div>
+                        <span>Cards</span>
+                    </div>
+                    <div class="opcao">
+                        <div class="icone">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+                        <span>Charts</span>
+                    </div>
+                    <div class="opcao">
+                        <div class="icone">
+                            <i class="fa-solid fa-arrow-pointer"></i>
+                        </div>
+                        <span>Buttons</span>
+                    </div>
+                    <div class="opcao">
+                        <div class="icone">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <span>Modals</span>
+                    </div>
+                    <div class="opcao">
+                        <div class="icone">
+                            <i class="fa-solid fa-table-list"></i>
+                        </div>
+                        <span>Tables</span>
+                    </div>
+                    <div class="opcao">
+                        <div class="icone">
+                            <i class="fa-solid fa-gauge-high"></i>
+                        </div>
+                        <div class="conteudo">
+                            <span>Pages</span>
+                            <div class="icone">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button>Create Account</button>
+            </aside>
+            <section class="main-content">
+                <h1>Dashboard</h1>
+                <div class="banner">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <p>Start this project in github</p>
+                    </div>
+
+                    <a href="">View more</a>
+                </div>
+                <div class="cards">
+                    <div class="card" id="um">
+                        <div class="esquerda">
+                            <div class="icone">
+                                <i class="fa-solid fa-user-group"></i>
+                            </div>
+                        </div>
+                        <div class="direita">
+                            <p>Total clients</p>
+                            <h3>6345</h3>
+                        </div>
+                    </div>
+                    <div class="card" id="dois">
+                        <div class="esquerda">
+                            <div class="icone">
+                                <i class="fa-solid fa-money-bills"></i>
+                            </div>
+                        </div>
+                        <div class="direita">
+                            <p>Account balance</p>
+                            <h3>R$ 34,670.00</h3>
+                        </div>
+                    </div>
+                    <div class="card" id="tres">
+                        <div class="esquerda">
+                            <div class="icone">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                        <div class="direita">
+                            <p>New sales</p>
+                            <h3>376</h3>
+                        </div>
+                    </div>
+                    <div class="card" id="quatro">
+                        <div class="esquerda">
+                            <div class="icone">
+                                <i class="fa-solid fa-comment"></i>
+                            </div>
+                        </div>
+                        <div class="direita">
+                            <p>Pending contacts</p>
+                            <h3>235</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-tabela">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>CLIENTE</th>
+                                <th>MONTANTE</th>
+                                <th>STATUS</th>
+                                <th>DATA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="cliente">
+                                        <b>Gabriel do lava-jato</b>
+                                        <p>Aspirador de tapete</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>R$ 850.00</p>
+                                </td>
+                                <td>
+                                    <div class="status" id="Aprovado">
+                                        <p>Aprovado</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>01/08/2024</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="cliente">
+                                        <b>Gabriel palhaço de circo</b>
+                                        <p>Vendedor de algodão doce</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>R$ 850.00</p>
+                                </td>
+                                <td>
+                                    <div class="status" id="Negado">
+                                        <p>Negado</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>01/03/2024</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="cliente">
+                                        <b>Gabriel do frigorifico</b>
+                                        <p>Cortador de boi</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>R$ 650.00</p>
+                                </td>
+                                <td>
+                                    <div class="status" id="Pendente">
+                                        <p>Pendente</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>21/04/2024</p>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="cliente">
+                                        <b>Gabriel moto uber</b>
+                                        <p>Piloto de fuga</p>
+                                    </div>
+                                </td>
+                            </td>
+                            <td>
+                                <p>R$ 450.00</p>
+                            </td>
+                            <td>
+                                <div class="status" id="Aprovado">
+                                    <p>Aprovado</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>01/03/2024</p>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
+    </main>
 </body>
 </html>

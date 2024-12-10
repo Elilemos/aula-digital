@@ -89,4 +89,30 @@ body {
     transition: all 300ms ease;
 }
 
+@media (
+    max-width: 640px
+) {
+    .conteiner .esquerda{
+        display: none;
+    }
 
+    .conteiner .direita{
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .conteiner{
+        flex-direction: column;
+    }
+
+    .conteiner .esquerda{
+        width: 100%;
+    }
+
+    .conteiner .direita{
+        width: 100%;
+        border-radius: 0;
+    }
+}
